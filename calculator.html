@@ -1,19 +1,73 @@
 <!doctype html>
 <html>
 <head>
-    <title>Learning Project 01: Calculator, Windows 10 Style</title>
-    <meta name="description" content="A Windows 10 Style calculator with basic operations as well as memory- and calculation history function.">
+    <title>Project 1: Calculator in Windows 10 design</title>
+    <meta name="description" content="A basic calculator in Windows 10 design with a memory and calculation history function.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
-    <header>
-        <h1>Project 01: Calculator, Windows 10 Style</h1>
-    </header>
-    <div></div>
-    <footer>
-        <p>Made by juse122</p>
-        <a href="https://github.com/juse122">GitHub Profile</a>
-    </footer>
-    <script src="calculator.js"></script>
+    <div class="flex-container">
+        <div>
+            <a href="/index.html" class="backlink">Home</a>
+            <h1>Project 1: Calculator in Windows 10 design</h1>
+            <div class="calc-container">
+                <div class="calc-case">
+                    <div class="calc-screen">
+                        <p id="calc-next" class="calc-next"></p>
+                        <p id="calc-result" class="calc-result">0</p>
+                    </div>
+                    <div class="calc-button-area">
+                        <button class="memory-button">MC</button>
+                        <button class="memory-button">MR</button>
+                        <button class="memory-button">M+</button>
+                        <button class="memory-button">M-</button>
+                        <button class="memory-button">MS</button>
+                        <div onclick="inputBackspace()" class="calc-button-backspace">
+                            <img src="X:/GitHub/juse122.github.io/backspace.png" alt="Backspace">
+                        </div>
+                        <button onclick="inputClearEntry()" id="calc-clear-entry" class="calc-button">CE</button>
+                        <button onclick="inputClear()" id="calc-clear" class="calc-button">C</button>
+                        <button onclick="inputDivide()" id="calc-divide" class="calc-button calc-button-operation">÷</button>
+                        <button class="calc-button calc-button-number">7</button>
+                        <button class="calc-button calc-button-number">8</button>
+                        <button class="calc-button calc-button-number">9</button>
+                        <button onclick="inputMultiply()" id="calc-multiply" class="calc-button calc-button-operation">×</button>
+                        <button class="calc-button calc-button-number">4</button>
+                        <button class="calc-button calc-button-number">5</button>
+                        <button class="calc-button calc-button-number">6</button>
+                        <button onclick="inputMinus()" id="calc-minus" class="calc-button calc-button-operation">-</button>
+                        <button onclick="inputOne()" id="calc-one" class="calc-button calc-button-number">1</button>
+                        <button onclick="inputTwo()" id="calc-two" class="calc-button calc-button-number">2</button>
+                        <button onclick="inputThree()" id="calc-three" class="calc-button calc-button-number">3</button>
+                        <button onclick="inputPlus()" id="calc-plus" class="calc-button calc-button-operation">+</button>
+                        <button onclick="inputConversion()" id="calc-conversion" class="calc-button calc-button-number">⁺∕₋</button>
+                        <button onclick="inputZero()" id="calc-zero" class="calc-button calc-button-number">0</button>
+                        <button onclick="inputComma()" id="calc-comma" class="calc-button calc-button-number">,</button>
+                        <button onclick="inputEquals(), createHistoryEntry()" id="calc-equals" class="calc-button calc-button-equals">=</button>
+                    </div>
+                </div>
+                <div class="history-case">
+                    <div class="history-button-area">
+                        <button class="history-button">History</button>
+                        <button class="history-button">Memory</button>
+                        <div onclick="deleteHistory()" id="history-trash" class="history-button-trash">
+                            <img src="X:/GitHub/juse122.github.io/trashcan.png" alt="Clear History">
+                        </div>
+                    </div>
+                    <div id="history-screen" class="history-screen">
+                        <p id="history-text" class="history-text">Es ist noch kein Verlauf vorhanden.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Made by juse122</p>
+            <p>|</p>
+            <a href="https://github.com/juse122">GitHub Profile</a>
+        </footer>
+    </div>
+    <script src="calc2.js">
+    </script>
 </body>
 </html>
