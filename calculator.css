@@ -186,6 +186,10 @@ h1 {
     background-color: #fefefe;
 }
 
+.calc-button-number-active {
+    background-color: #cccccc;
+}
+
 .calc-button-operation {
     font-size: 28px;
     font-weight: 100;

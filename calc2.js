@@ -397,6 +397,31 @@ function deleteHistory() {
     createTextElement.innerHTML = "Es ist noch kein Verlauf vorhanden.";
 };
 
+// Keyboard input //
+
+document.onkeydown = (event) => {
+    let keyCode = event.keyCode;
+
+    switch (keyCode) {
+        case 49:
+        case 97:
+            inputOne();
+            document.querySelector("#calc-one").classList.add("calc-button-number-active");
+            break;
+    };
+};
+
+document.onkeyup = (event) => {
+    let keyCode = event.keyCode;
+
+    switch (keyCode) {
+        case 49:
+        case 97:
+            document.querySelector("#calc-one").classList.remove("calc-button-number-active");
+            break;
+    };
+};
+
 
 /*
 function inputPlus() {
