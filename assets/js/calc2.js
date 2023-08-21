@@ -185,6 +185,138 @@ function inputThree() {
     document.getElementById("calc-result").innerHTML = calcCurrent;
 };
 
+function inputFour() {
+    if (calcEquals !== "" && calcValue1 !== "" && calcValue2 !== "") {
+        calcInterim = "";
+        calcEquals = "";
+        calcCurrent = "";
+        calcValue1 = "";
+        document.getElementById("calc-next").innerHTML = "";
+    }
+    
+    else if (calcEquals !== "") {
+        calcInterim = "";
+        calcEquals = "";
+        calcCurrent = "";
+    };
+    
+    if (calcCurrent.length < 13) {
+        calcCurrent = calcCurrent + "4";
+    };
+
+    document.getElementById("calc-result").innerHTML = calcCurrent;
+};
+
+function inputFive() {
+    if (calcEquals !== "" && calcValue1 !== "" && calcValue2 !== "") {
+        calcInterim = "";
+        calcEquals = "";
+        calcCurrent = "";
+        calcValue1 = "";
+        document.getElementById("calc-next").innerHTML = "";
+    }
+    
+    else if (calcEquals !== "") {
+        calcInterim = "";
+        calcEquals = "";
+        calcCurrent = "";
+    };
+    
+    if (calcCurrent.length < 13) {
+        calcCurrent = calcCurrent + "5";
+    };
+
+    document.getElementById("calc-result").innerHTML = calcCurrent;
+};
+
+function inputSix() {
+    if (calcEquals !== "" && calcValue1 !== "" && calcValue2 !== "") {
+        calcInterim = "";
+        calcEquals = "";
+        calcCurrent = "";
+        calcValue1 = "";
+        document.getElementById("calc-next").innerHTML = "";
+    }
+    
+    else if (calcEquals !== "") {
+        calcInterim = "";
+        calcEquals = "";
+        calcCurrent = "";
+    };
+    
+    if (calcCurrent.length < 13) {
+        calcCurrent = calcCurrent + "6";
+    };
+
+    document.getElementById("calc-result").innerHTML = calcCurrent;
+};
+
+function inputSeven() {
+    if (calcEquals !== "" && calcValue1 !== "" && calcValue2 !== "") {
+        calcInterim = "";
+        calcEquals = "";
+        calcCurrent = "";
+        calcValue1 = "";
+        document.getElementById("calc-next").innerHTML = "";
+    }
+    
+    else if (calcEquals !== "") {
+        calcInterim = "";
+        calcEquals = "";
+        calcCurrent = "";
+    };
+    
+    if (calcCurrent.length < 13) {
+        calcCurrent = calcCurrent + "7";
+    };
+
+    document.getElementById("calc-result").innerHTML = calcCurrent;
+};
+
+function inputEight() {
+    if (calcEquals !== "" && calcValue1 !== "" && calcValue2 !== "") {
+        calcInterim = "";
+        calcEquals = "";
+        calcCurrent = "";
+        calcValue1 = "";
+        document.getElementById("calc-next").innerHTML = "";
+    }
+    
+    else if (calcEquals !== "") {
+        calcInterim = "";
+        calcEquals = "";
+        calcCurrent = "";
+    };
+    
+    if (calcCurrent.length < 13) {
+        calcCurrent = calcCurrent + "8";
+    };
+
+    document.getElementById("calc-result").innerHTML = calcCurrent;
+};
+
+function inputNine() {
+    if (calcEquals !== "" && calcValue1 !== "" && calcValue2 !== "") {
+        calcInterim = "";
+        calcEquals = "";
+        calcCurrent = "";
+        calcValue1 = "";
+        document.getElementById("calc-next").innerHTML = "";
+    }
+    
+    else if (calcEquals !== "") {
+        calcInterim = "";
+        calcEquals = "";
+        calcCurrent = "";
+    };
+    
+    if (calcCurrent.length < 13) {
+        calcCurrent = calcCurrent + "9";
+    };
+
+    document.getElementById("calc-result").innerHTML = calcCurrent;
+};
+
 function inputPlus() {
     if (calcEquals !== "") {
         calcValue1 = calcEquals;

@@ -1,16 +1,16 @@
 <!doctype html>
 <html>
 <head>
-    <title>Project 1: Calculator in Windows 10 design</title>
+    <title>Calculator in Windows 10 design</title>
     <meta name="description" content="A basic calculator in Windows 10 design with a memory and calculation history function.">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="./assets/css/calculator.css">
 </head>
 <body>
     <div class="flex-container">
         <div>
-            <a href="/index.html" class="backlink">Home</a>
-            <h1>Project 1: Calculator in Windows 10 design</h1>
+            <a href="https://juse122.github.io/projects" class="backlink">Home</a>
+            <h1>Calculator in Windows 10 design</h1>
             <div class="calc-container">
                 <div class="calc-case">
                     <div class="calc-screen">
@@ -24,18 +24,18 @@
                         <button class="memory-button">M-</button>
                         <button class="memory-button">MS</button>
                         <div onclick="inputBackspace()" class="calc-button-backspace">
-                            <img src="X:/GitHub/juse122.github.io/backspace.png" alt="Backspace">
+                            <img src="assets/img/backspace.png" alt="Backspace">
                         </div>
                         <button onclick="inputClearEntry()" id="calc-clear-entry" class="calc-button">CE</button>
                         <button onclick="inputClear()" id="calc-clear" class="calc-button">C</button>
                         <button onclick="inputDivide()" id="calc-divide" class="calc-button calc-button-operation">÷</button>
-                        <button class="calc-button calc-button-number">7</button>
-                        <button class="calc-button calc-button-number">8</button>
-                        <button class="calc-button calc-button-number">9</button>
+                        <button onclick="inputSeven()" id="calc-seven" class="calc-button calc-button-number">7</button>
+                        <button onclick="inputEight()" id="calc-eight" class="calc-button calc-button-number">8</button>
+                        <button onclick="inputNine()" id="calc-nine" class="calc-button calc-button-number">9</button>
                         <button onclick="inputMultiply()" id="calc-multiply" class="calc-button calc-button-operation">×</button>
-                        <button class="calc-button calc-button-number">4</button>
-                        <button class="calc-button calc-button-number">5</button>
-                        <button class="calc-button calc-button-number">6</button>
+                        <button onclick="inputFour()" id="calc-four" class="calc-button calc-button-number">4</button>
+                        <button onclick="inputFive()" id="calc-five"class="calc-button calc-button-number">5</button>
+                        <button onclick="inputSix()" id="calc-six" class="calc-button calc-button-number">6</button>
                         <button onclick="inputMinus()" id="calc-minus" class="calc-button calc-button-operation">-</button>
                         <button onclick="inputOne()" id="calc-one" class="calc-button calc-button-number">1</button>
                         <button onclick="inputTwo()" id="calc-two" class="calc-button calc-button-number">2</button>
@@ -52,7 +52,7 @@
                         <button class="history-button">History</button>
                         <button class="history-button">Memory</button>
                         <div onclick="deleteHistory()" id="history-trash" class="history-button-trash">
-                            <img src="X:/GitHub/juse122.github.io/trashcan.png" alt="Clear History">
+                            <img src="assets/img/trashcan.png" alt="Clear History">
                         </div>
                     </div>
                     <div id="history-screen" class="history-screen">
@@ -67,7 +67,7 @@
             <a href="https://github.com/juse122">GitHub Profile</a>
         </footer>
     </div>
-    <script src="calc2.js">
+    <script src="assets/js/calc2.js">
     </script>
 </body>
 </html>
