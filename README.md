@@ -1,2 +1,3 @@
-# learning-projects
- My first attempts at coding
+# project-calc
+
+## First learning project
